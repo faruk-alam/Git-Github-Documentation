@@ -1,0 +1,287 @@
+What is Git?
+
+Git is an open-source distributed version control system.That
+basically means..
+- It is a system that records changes to our files over time
+- Many people can easily collabrate on a project and they have their 
+own version of project files on their computer.
+It is a modern and widely used 
+distributed version control system in the world.It is developed to co-ordinate the work 
+among the developers and to manage projects with high speed and efficiency. 
+
+What is Version Control System (VCS) ?
+
+Version Control System (VCS) is a software that help developers to work together 
+with their team members at the same workspace and maintain a complete history of their work.
+
+In other words,The version control system is a collection of software tools that help a team to 
+manage changes in a source code. It uses a special kind of database to keep track of every 
+modification to the code.
+Developers can compare earlier versions of the code with an older version to fix the mistakes.
+
+Listed below are the functions of a VCS −
+
+Allows developers to work simultaneously.
+Does not allow overwriting each other’s changes.
+Maintains a history of every version.
+Following are the types of VCS −
+
+Centralized version control system (CVCS).
+Distributed/Decentralized version control system (DVCS).
+
+Breif History of git :
+Git was created by Linus Torvalds in 2005 to develop Linux Kernel. 
+It is also used as an important distributed version-control tool for the DevOps.
+
+Benefits of Git
+
+keep track
+Git  allows us to keep track of all the changes that we make in the files of our project.
+
+Saves Time
+Git is lightning fast technology. Each command takes only a few seconds to execute so we 
+can save a lot of time as compared to login to a GitHub account and find out its features.
+
+Offline Working
+One of the most important benefits of Git is that it supports offline working. If we are 
+facing internet connectivity issues, it will not affect our work. In Git, we can do almost 
+everything locally. Comparatively, other CVS like SVN is limited and prefer the connection 
+with the central repository.
+
+Undo Mistakes
+One additional benefit of Git is we can Undo mistakes. Sometimes the undo can be a savior option 
+for us. Git provides the undo option for almost everything.
+
+Track the Changes
+Git facilitates with some exciting features such as Diff, Log, and Status, which allows us to track 
+changes so we can check the status, compare our files or branches.
+
+What is GitHub?
+
+GitHub is a Git repository hosting service. It provides a Web-based graphical interface.
+It hosts source code of your project in the form of different programming languages and 
+keeps track of the various changes made by programmers.
+
+Benefits of GitHub :
+It is easy to contribute to open source projects via GitHub.
+
+It helps to create an excellent document.
+
+You can attract recruiter by showing off your work. If you have a profile on GitHub, 
+
+you will have a higher chance of being recruited.
+
+It allows your work to get out there in front of the public.
+
+You can track changes in your code across versions.
+
+Git Setup And Configuaration:
+
+Download and install git
+
+To see git version-
+git --version
+
+configuaration Of git:
+
+To set username-
+git config --global user.name "your user name"
+
+To set email-git
+git config --global user.email "your email"
+
+To see git configuaration
+git config --list
+
+How to see present/running directory?
+pwd
+
+How to see folder/fle of a directory?
+ls
+
+How to create git folder?
+mkdir folder's name
+
+How to move one folder to another folder ?
+cd folder's name
+
+How to check/see all file of a folder?
+ls -a
+
+How to create file into a folder?
+touch file's name with extension
+
+How to open a file?
+start file's name
+
+how to initialize git repository ?
+git init
+
+How to return previous folder ?
+cd ..
+
+How to check tracked and untracked file ?
+git status
+
+How to make files trackable or add files in staging Area from working Area ?
+git add "file's Name"
+
+(For all file directory and subdirectories)
+git add -A
+
+For all file of directory
+git add .
+
+How to see modification of file ?git
+git diff
+
+How to unstage file?
+git rm --cached file
+
+How to do git commit and reset  commit?
+git commit -m "massage...."
+
+How to add file and git commit together?
+git add ./"file name...." && git commit -m "massage...."
+or
+git commit -am "massage....."
+
+How to see git commit history ? 
+git log
+
+How to undo a commit ?
+git revert commit-id
+
+How to git uncommit ?
+
+For uncommit and remove from local repository-
+git reset --soft HEAD^
+
+For uncommit and remove from stagging Area-
+git reset HEAD^
+
+For uncommit and remove from working directory-
+git reset --hard HEAD^
+
+How to see git commit history in breif ?
+git log --oneline
+
+How to see details of a git commit ?
+git show commit-id
+
+How to move one commit to another commit ?
+git checkout commit-id
+
+How to return previous state ?
+git checkout branch-name
+
+How to ignore a file ?
+By using .gitignore file we can ignore a file.
+First we have to crete a fine .gitignore.
+then inside the gitignore file,we put that files, 
+which we want to ignore.
+for single file - filename.extension.
+Many files with same extension - *.extension
+Not ignore for specific file - !.extension
+
+How to check a repository connected with remote repository or not ?
+git remote 
+
+If connected,for details information-
+git remote -v
+
+How to connect local repo with remote repo ?
+git remote add repo-name "url of repo"
+
+How to push local reop to remote repo ?
+git push -u repo-name branch-name
+
+Branching & Merging:
+
+How to change branch-name on local repository?
+git branch-M branch-name 
+
+How to see git branch?
+git branch -a
+
+How to create a branch?
+git branch branch-name
+
+How to move one branch to another branch ?
+git checkout branch-name
+
+How to delete a branch ?
+git branch -D branch-name
+
+How to create and switch a new branch together ?
+git checkout -b branch-name
+
+How to merge one branch to another branch in local
+repository ?
+git merge branch-name(target)
+
+First Forward and 3 way Merging-
+for practacing :
+https://git-school.github.io/visualizing-git/
+
+How to open a folder with ide ?
+code .
+
+How to clone a repository?
+git clone url of repository
+
+How to add collabrator on github in your project?
+open github ripository --> setting --> Collaborators --> Add people 
+--> Enter collaborators details --> Add ......
+
+How to add collaborations rules for collaborators ? 
+Setting --> branch --> select rule option --> create
+
+How to create and setup SSH key?
+For creating .ssh folder- 
+mkdir .ssh
+
+For setup ssh key-
+ssh-keygen -o -t rsa -C email....(Email that associated with Git)
+
+After creating ssh key,setup key 
+Github setting --> SSH and GPG keys --> SSH keys --> Add Key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
