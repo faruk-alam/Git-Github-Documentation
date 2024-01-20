@@ -80,100 +80,100 @@ Git Setup And Configuaration:
 Download and install git
 
 To see git version-
-git --version
+$ git --version
 
 configuaration Of git:
 
 To set username-
-git config --global user.name "your user name"
+$ git config --global user.name <"your user name">
 
 To set email-git
-git config --global user.email "your email"
+$ git config --global user.email <"your email">
 
 To see git configuaration
-git config --list
+$ git config --list
 
 How to see present/running directory?
-pwd
+$ pwd
 
 How to see folder/fle of a directory?
-ls
+$ ls
 
 How to create git folder?
-mkdir folder's name
+$ mkdir <folder's name>
 
 How to move one folder to another folder ?
-cd folder's name
+$ cd <folder's name>
 
 How to check/see all file of a folder?
-ls -a
+$ ls -a
 
 How to create file into a folder?
-touch file's name with extension
+$ touch <file's name with extension>
 
 How to open a file?
-start file's name
+$ start <file's name>
 
 how to initialize git repository ?
-git init
+$ git init
 
 How to return previous folder ?
-cd ..
+$ cd ..
 
 How to check tracked and untracked file ?
-git status
+$ git status
 
 How to make files trackable or add files in staging Area from working Area ?
-git add "file's Name"
+$ git add <"file's Name">
 
 (For all file directory and subdirectories)
-git add -A
+$ git add -A
 
 For all file of directory
-git add .
+$ git add .
 
 How to see modification of file ?git
-git diff
+$ git diff
 
 How to unstage file?
-git rm --cached file
+$ git rm --cached file
 
 How to do git commit and reset  commit?
-git commit -m "massage...."
+$ git commit -m "massage...."
 
 How to add file and git commit together?
-git add ./"file name...." && git commit -m "massage...."
+$ git add ./"file name...." && git commit -m "massage...."
 or
-git commit -am "massage....."
+$ git commit -am "massage....."
 
 How to see git commit history ? 
-git log
+$ git log
 
 How to undo a commit ?
-git revert commit-id
+$ git revert <commit-id>
 
 How to git uncommit ?
 
 For uncommit and remove from local repository-
-git reset --soft HEAD^
+$ git reset --soft HEAD^ <branch-name> 
 
 For uncommit and remove from stagging Area-
-git reset HEAD^
+$ git reset HEAD^ <branch-name>
 
 For uncommit and remove from working directory-
-git reset --hard HEAD^
+$ git reset --hard HEAD^ <branch-name>
 
 How to see git commit history in breif ?
-git log --oneline
+$ git log --oneline
 
 How to see details of a git commit ?
-git show commit-id
+$ git show <commit-id>
 
 How to move one commit to another commit ?
-git checkout commit-id
+$ git checkout <commit-id>
 
 How to return previous state ?
-git checkout branch-name
+$ git checkout <branch-name>
 
 How to ignore a file ?
 By using .gitignore file we can ignore a file.
@@ -185,47 +185,47 @@ Many files with same extension - *.extension
 Not ignore for specific file - !.extension
 
 How to check a repository connected with remote repository or not ?
-git remote 
+$ git remote 
 
 If connected,for details information-
-git remote -v
+$ git remote -v
 
 How to connect local repo with remote repo ?
-git remote add repo-name "url of repo"
+$ git remote add <repo-name> <"url of repo">
 
 How to push local reop to remote repo ?
-git push -u repo-name branch-name
+$ git push -u <repo-name> <branch-name>
 
 Branching & Merging:
 
 How to change branch-name on local repository?
-git branch-M branch-name 
+$ git branch-M <branch-name> 
 
 How to see git branch?
-git branch -a
+$ git branch -a
 
 How to create a branch?
-git branch branch-name
+$ git branch <branch-name>
 
 How to move one branch to another branch ?
-git checkout branch-name
+$ git checkout <branch-name>
 
 How to delete a branch ?
-git branch -D branch-name
+$ git branch -D <branch-name>
 
 How to create and switch a new branch together ?
-git checkout -b branch-name
+$ git checkout -b <branch-name>
 
 How to merge one branch to another branch in local
 repository ?
-git merge branch-name(target)
+$ git merge <branch-name(target)>
 
 First Forward and 3 way Merging-
 for practacing :
 https://git-school.github.io/visualizing-git/
 
 How to open a folder with ide ?
-code .
+$ code .
 
 How to clone a repository?
 git clone url of repository
@@ -239,10 +239,10 @@ Setting --> branch --> select rule option --> create
 
 How to create and setup SSH key?
 For creating .ssh folder- 
-mkdir .ssh
+$ mkdir .ssh
 
 For setup ssh key-
-ssh-keygen -o -t rsa -C email....(Email that associated with Git)
+$ ssh-keygen -o -t rsa -C email....(Email that associated with Git)
 
 After creating ssh key,setup key 
 Github setting --> SSH and GPG keys --> SSH keys --> Add Key
