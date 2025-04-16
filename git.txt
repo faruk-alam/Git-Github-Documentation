@@ -117,6 +117,14 @@ $ start <file's name>
 how to initialize git repository ?
 $ git init
 
+How to uninitialize (remove) git from a directory?
+If you’re using Git Bash:
+
+rm -rf .git  
+If you’re using Command Prompt or PowerShell:
+
+rmdir /s /q .git  
+
 How to return previous folder ?
 $ cd ..
 
@@ -195,6 +203,11 @@ $ git remote add <repo-name> <"url of repo">
 
 How to push local reop to remote repo ?
 $ git push -u <repo-name> <branch-name>
+
+How to disconnect a local Git repository from remote master?
+git remote rm origin
+or
+git remote remove origin
 
 Branching & Merging:
 
