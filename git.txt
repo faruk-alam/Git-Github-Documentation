@@ -243,6 +243,8 @@ $ code .
 How to clone a repository?
 git clone url of repository
 
+git fetch 
+
 How to add collabrator on github in your project?
 open github ripository --> setting --> Collaborators --> Add people 
 --> Enter collaborators details --> Add ......
