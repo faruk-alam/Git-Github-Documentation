@@ -262,6 +262,10 @@ $ ssh-keygen -o -t rsa -C email....(Email that associated with Git)
 After creating ssh key,setup key 
 Github setting --> SSH and GPG keys --> SSH keys --> Add Key
 
+How to publish a repository on github ?
+Enter desire repository --> Click on "setting" --> click on "pages" --> Build & deployment" --> select "Deploy from branch"
+--> select branch --> click on "save" --> then the site will be live within few seconds.
+
 
 
 
